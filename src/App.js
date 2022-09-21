@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+// import PetCards from './components/cards/PetCards';
+import SignInSide from './pages/signInSide/SignInSide';
+import Home from './pages/home/Home';
+import BasicModal from './components/BasicModal/BasicModal';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SignInSide></SignInSide>
+      <Home></Home>
     </div>
   );
 }
