@@ -1,0 +1,7 @@
+.album-image {
+    width: 250px;
+    height: 225px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
