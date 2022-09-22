@@ -13,10 +13,13 @@ import Filter from "../filter/Filter";
 
 
 import './petCards.css'
+import { useState } from "react";
 
 const cards = [];
 
 export default function PetCards(props) {
+  const[cardsA,setCardsA]=useState([]);
+       
   (() => {
     for (let index = 0; index < props.image.length; index++) {
       cards[index] = index;
@@ -55,6 +58,7 @@ export default function PetCards(props) {
           </Typography>
           <div style={{display:"flex",justifyContent:"center"}}>
           <Filter />
+         
           </div>
         </Container>
       </Box>
@@ -80,7 +84,7 @@ export default function PetCards(props) {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <BasicModal image={props.image[index]}/>
+                    <BasicModal id={props.id[index]} image={props.image[index]} name={props.name[index]} phone={props.phone[index]} email={props.email[index]} type={props.type[index]} size={props.size[index]} vailent={props.vailent[index]} place={props.place[index]} time={props.time[index]} problem={props.problem[index]} exstraD={props.exstraD[index]}/>
                   </CardActions>
               </Card>
             </Grid>

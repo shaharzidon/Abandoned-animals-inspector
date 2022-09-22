@@ -94,33 +94,17 @@ export default function SignInSide() {
                 id="password"
                 autoComplete="current-password"
               />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                dir='rtl'
-                label="זכור אותי"
-
-              />
+              
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                
               >
                 התחברות
               </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2" dir='rtl'>
-                
-                    שכחת סיסמה?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"אין לך עוד משתמש?בצעו הרשמה פה"}
-                  </Link>
-                </Grid>
-              </Grid>
+              
               
             </Box>
           </Box>

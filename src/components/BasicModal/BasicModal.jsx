@@ -3,13 +3,15 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import "./BasicModal.css"
+import axios from 'axios'
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 500,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -20,7 +22,14 @@ export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  const deleteTodo=(id)=>{
+    axios.delete(`/api/animals/${id}`).then()
+   } 
+   const save=()=>{
+    alert("תודה שטיפלת בדיווח הציבור מודה לך")
+    
+    
+   }
   return (
     <div>
       <Button onClick={handleOpen}>הצגה</Button>
@@ -31,21 +40,65 @@ export default function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-
-          <Box sx={{ display: "flex", justifyContent: "center",  }}>
+          <div className='allCon'>
+          <div className='photoandC'>
+          <Box sx={{ display: "flex", justifyContent: "space-between",  }}>
             <img
               src={props.image}
-              width={"100%"}
+              width={"40%"}
             />
-          </Box>
-
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est no commodo luctus, nisi erat porttitor ligula.
+          <div>
+          <Typography dir="rtl" >
+            פרטי המדווח
           </Typography>
-          <Button dir='rtl' size="small">שמירה</Button>
+          <Typography dir="rtl" >
+            {`${props.name}`}
+          </Typography>
+          <Typography >
+          <a href={`tel:${props.phone}`}>{props.phone}</a>
+            
+          </Typography>
+          </div>
+          </Box>
+          </div>
+          <div className='animalD'>
+          <div>
+          <Typography dir="rtl" >
+            {`פרטי הדיווח`}
+          </Typography>
+          <Typography dir="rtl" >
+            {`${props.type}`}
+          </Typography>
+          <Typography dir="rtl" >
+            {`${props.size}`}
+          </Typography>
+          <Typography dir="rtl" >
+            <Button onClick={()=>window.open("https://maps.google.com?q="+props.place)}>
+              {`${props.place}`}
+              </Button>
+          </Typography>
+          <Typography dir="rtl" >
+            {`${props.vailent}`}
+          </Typography>
+          <Typography dir="rtl" >
+            {`${props.time}`}
+          </Typography>
+          
+          </div>
+            <div>
+            <Typography dir="rtl" >
+            {`${props.problem}`}
+          </Typography>
+          <Typography dir="rtl" >
+            {`${props.exstraD}`}
+          </Typography>
+            </div>
+          </div>
+
+          </div>
+
+          
+          <Button dir='rtl' size="midume" onClick={()=>save()}>שמירה</Button>
         </Box>
       </Modal>
     </div>

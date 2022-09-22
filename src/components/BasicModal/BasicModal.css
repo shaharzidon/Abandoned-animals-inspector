@@ -1,0 +1,18 @@
+.photoandC{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.allCon{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+
+}
+
+.animalD{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
