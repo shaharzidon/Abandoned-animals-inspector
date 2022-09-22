@@ -10,6 +10,7 @@ function ImageS() {
         .then((res) => {
             
                 res.data && setImageArry([...res.data])
+                console.log(imageArry);
                 
             })
     }
@@ -18,7 +19,7 @@ function ImageS() {
        },[])
   return (
     <div className="App">
-      <Image cloudName="dptzubs72" publicId="https://res.cloudinary.com/dptzubs72/image/upload/v1663765338/mxpqdlw3k1suipwljrad.png" style={{width:"30vw"}}></Image>
+      <Image cloudName="dptzubs72" publicId={imageArry[9].photo} style={{width:"30vw"}}></Image>
     </div>
   );
 }
