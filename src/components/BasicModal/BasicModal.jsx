@@ -23,7 +23,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>view</Button>
+      <Button onClick={handleOpen}>הצגה</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -34,12 +34,18 @@ export default function BasicModal() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Text in a modal
           </Typography>
-         {/* <div src={"https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"}></div> */}
+
+          <Box sx={{ display: "flex", justifyContent: "center",  }}>
+            <img
+              src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
+              width={"100%"}
+            />
+          </Box>
+
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
-          <Button size="small">Remove</Button>
-          <Button size="small">Save</Button>
+          <Button dir='rtl' size="small">שמירה</Button>
         </Box>
       </Modal>
     </div>
