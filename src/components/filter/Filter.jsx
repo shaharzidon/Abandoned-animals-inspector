@@ -10,8 +10,8 @@ export default function Filter() {
         id="free-solo-demo"
         freeSolo
         options={top100Films.map((option) => option.title)}
-        renderInput={(params) => <TextField {...params} label="freeSolo" />}
-        align="center"
+        renderInput={(params) => <TextField dir='rtl' {...params} label="שכונות בדימונה" />}
+        align="right"
       />
 
     </Stack>
@@ -20,8 +20,8 @@ export default function Filter() {
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
 const top100Films = [
-  { title: 'The Shawshank Redemption', year: 1994 },
-  { title: 'The Godfather', year: 1972 },
-  { title: 'The Godfather: Part II', year: 1974 },
-  { title: 'The Dark Knight', year: 2008 }
+  { title: 'ממשית'},
+  { title: 'השחר'},
+  { title: 'נווה חורש'},
+  { title: 'המעפיל'}
 ];

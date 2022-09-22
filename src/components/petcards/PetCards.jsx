@@ -26,11 +26,11 @@ export default function PetCards(props) {
     }
   })();
   return (
-    <main>
+    <main >
+      <div className="petCards">
       <CssBaseline />
       <Box
         sx={{
-          bgcolor: "background.paper",
           pt: 10,
           pb: 0,
         }}
@@ -91,6 +91,7 @@ export default function PetCards(props) {
           ))}
         </Grid>
       </Container>
+      </div>
     </main>
   );
 }
