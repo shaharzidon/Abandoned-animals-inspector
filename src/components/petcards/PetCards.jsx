@@ -41,8 +41,9 @@ export default function PetCards(props) {
             color="text.primary"
             gutterBottom
             sx={{ fontSize: { xs: 30, sm: 50 } }}
+            dir='rtl'
           >
-            Our Photo Album
+            בעלי חיים שאבדו
           </Typography>
           <Typography
             variant="h5"
@@ -50,13 +51,12 @@ export default function PetCards(props) {
             color="text.secondary"
             paragraph
             sx={{ fontSize: { xs: 15, sm: 22 } }}
-          >
-            Our extensive experience in producing events has led us to discover
-            a wide variety of special ocations. When we meet, we will offer you
-            a selection of interesting locations in nature. we will ensure that
-            the view matches the atmosphere you want
+            dir='rtl'
+          >במאגר הזה תוכלו למצוא דיווחים על בעלי חיים שאיבדו את בלעיהם בשטחי העיר דימונה. מאגר זה נועד כדי לייעל את התהליך הכה מאתגר של מציאת בעלי חיים,ולהשיב חיות המחמד.
           </Typography>
-          <Filter align="center"></Filter>
+          <div style={{display:"flex",justifyContent:"center"}}>
+          <Filter />
+          </div>
         </Container>
       </Box>
       <Container sx={{ py: 8 }} maxWidth="xlg">
@@ -83,7 +83,7 @@ export default function PetCards(props) {
                   </CardContent>
                   <CardActions>
                     <BasicModal/>
-                    <Button size="small">Edit</Button>
+                 
                   </CardActions>
               </Card>
             </Grid>

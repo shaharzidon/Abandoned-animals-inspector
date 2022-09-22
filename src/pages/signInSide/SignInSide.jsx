@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { Link } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -67,8 +68,8 @@ export default function SignInSide() {
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
+            <Typography dir='rtl' component="h1" variant="h5">
+              כניסה
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
@@ -76,24 +77,28 @@ export default function SignInSide() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                dir='rtl'
+                label="כתובת דואר אלקטרוני"
                 name="email"
                 autoComplete="email"
-                autoFocus
+                autoFocus 
               />
               <TextField
                 margin="normal"
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                dir='rtl'
+                label="סיסמה"
                 type="password"
                 id="password"
                 autoComplete="current-password"
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
+                dir='rtl'
+                label="זכור אותי"
+
               />
               <Button
                 type="submit"
@@ -101,21 +106,22 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                התחברות
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
+                  <Link href="#" variant="body2" dir='rtl'>
+                
+                    שכחת סיסמה?
                   </Link>
                 </Grid>
                 <Grid item>
                   <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
+                    {"אין לך עוד משתמש?בצעו הרשמה פה"}
                   </Link>
                 </Grid>
               </Grid>
-              <Copyright sx={{ mt: 5 }} />
+              
             </Box>
           </Box>
         </Grid>

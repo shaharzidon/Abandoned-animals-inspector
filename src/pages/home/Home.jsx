@@ -1,6 +1,6 @@
-import Filter from '../../components/filter/Filter';
 import PetCards from '../../components/petcards/PetCards';
 import './home.css';
+import Footer from '../footer/Footer';
 
 function Home() {
     const images =[
@@ -17,6 +17,7 @@ function Home() {
   return (
     <div className="home">
     <PetCards image={images}></PetCards>
+    <Footer/> 
     </div>
   );
 }
