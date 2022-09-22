@@ -43,7 +43,7 @@ export default function BasicModal(props) {
           </Box>
 
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Duis mollis, est no commodo luctus, nisi erat porttitor ligula.
           </Typography>
           <Button dir='rtl' size="small">שמירה</Button>
         </Box>
