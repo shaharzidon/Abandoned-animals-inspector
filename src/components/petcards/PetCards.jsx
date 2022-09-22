@@ -78,7 +78,7 @@ export default function PetCards(props) {
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe the
-                      content.
+                      c.
                     </Typography>
                   </CardContent>
                   <CardActions>
