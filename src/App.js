@@ -5,6 +5,9 @@ import {Routes,Route} from 'react-router-dom';
 
 
 
+import ImageS from './components/ImegeS';
+import {Route,Routes} from 'react-router-dom'
+
 
 function App() {
   return (

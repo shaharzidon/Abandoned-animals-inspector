@@ -16,7 +16,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,7 +37,7 @@ export default function BasicModal() {
 
           <Box sx={{ display: "flex", justifyContent: "center",  }}>
             <img
-              src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
+              src={props.image}
               width={"100%"}
             />
           </Box>
@@ -51,3 +51,4 @@ export default function BasicModal() {
     </div>
   );
 }
+

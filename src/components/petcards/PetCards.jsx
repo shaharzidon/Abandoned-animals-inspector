@@ -11,7 +11,6 @@ import CardContent from '@mui/material/CardContent';
 import BasicModal from "../BasicModal/BasicModal";
 import Filter from "../filter/Filter";
 
-// import CardContent from '@mui/material/CardContent';
 
 import './petCards.css'
 
@@ -74,16 +73,14 @@ export default function PetCards(props) {
                 </Box>
                 <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {props.type[index]}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      c.
+                      {props.problem[index]}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <BasicModal/>
-                 
+                    <BasicModal image={props.image[index]}/>
                   </CardActions>
               </Card>
             </Grid>
