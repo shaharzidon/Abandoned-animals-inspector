@@ -14,6 +14,8 @@ import Filter from "../filter/Filter";
 
 import './petCards.css'
 import { useState } from "react";
+import { grey } from "@mui/material/colors";
+import { color } from "@mui/system";
 
 const cards = [];
 
@@ -42,7 +44,7 @@ export default function PetCards(props) {
             align="center"
             color="text.primary"
             gutterBottom
-            sx={{ fontSize: { xs: 30, sm: 50 } }}
+            sx={{ fontSize: { xs: 30, sm: 50 }}}
             dir='rtl'
           >
             בעלי חיים שאבדו
@@ -68,14 +70,14 @@ export default function PetCards(props) {
           {cards.map((card, index) => (
             <Grid item key={card} xs={12} sm={6} md={4} lg={3}>
               <Card>
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Box sx={{bgcolor:'text.disabled', display: "flex", justifyContent: "center" }}>
                   <img
                     src={props.image[index]}
                     alt={index}
                     className="album-image"
                   />
                 </Box>
-                <CardContent sx={{ flexGrow: 1 }}>
+                <CardContent sx={{ flexGrow: 1 , bgcolor:'text.disabled'}}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {props.type[index]}
                     </Typography>
