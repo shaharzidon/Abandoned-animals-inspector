@@ -14,8 +14,8 @@ import Filter from "../filter/Filter";
 
 import './petCards.css'
 import { useState } from "react";
-import { grey } from "@mui/material/colors";
-import { color } from "@mui/system";
+// import { grey } from "@mui/material/colors";
+// import { color } from "@mui/system";
 
 const cards = [];
 

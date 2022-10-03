@@ -1,6 +1,6 @@
 import PetCards from '../../components/petcards/PetCards';
 import './home.css';
-import {Image} from 'cloudinary-react'
+// import {Image} from 'cloudinary-react'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import Footer from '../footer/Footer';
