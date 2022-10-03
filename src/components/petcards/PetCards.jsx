@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import CardContent from '@mui/material/CardContent';
 import BasicModal from "../BasicModal/BasicModal";
 import Filter from "../filter/Filter";
@@ -20,7 +20,7 @@ import { useState } from "react";
 const cards = [];
 
 export default function PetCards(props) {
-  const[cardsA,setCardsA]=useState([]);
+  // const[cardsA,setCardsA]=useState([]);
        
   (() => {
     for (let index = 0; index < props.image.length; index++) {
