@@ -19,11 +19,14 @@ function Home() {
           })
   }
   useEffect(()=>{
+    function a(){
       getAnimals()
       if (counterb<counter) {
         alert('התווסף דיווח חדש')
         setCounterb(counter)
       }
+    }
+      a()
      })
 
     const images =[

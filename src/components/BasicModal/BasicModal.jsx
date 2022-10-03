@@ -39,6 +39,7 @@ export default function BasicModal(props) {
           <img
               src={props.image}
               width={200}
+              alt="anumalIMG"
             />
           <Typography dir='rtl' id="modal-modal-title" variant="h6" component="h2">
             פרטים נוספים:
