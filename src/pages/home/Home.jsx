@@ -11,7 +11,7 @@ function Home() {
   const [counterb,setCounterb]=useState(0)
   
   const getAnimals = () => {
-      axios.get('/api/animals')
+      axios.get('api/animals')
       .then((res) => {
               res.data && setAllData([...res.data])
               console.log(allData);
