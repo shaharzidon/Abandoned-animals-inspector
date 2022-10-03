@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { FaFacebook, FaInstagram, FaYoutube, FaCalendarAlt, FaPhone, FaQuestionCircle, FaUserFriends, FaHandshake, FaHeart } from 'react-icons/fa';
+import React from 'react';
+import { FaFacebook, FaInstagram, FaYoutube, FaPhone, FaQuestionCircle, FaUserFriends } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 // import { Link, useNavigate } from 'react-router-dom';
 import './footer.css'
@@ -13,23 +13,27 @@ function Footer() {
     return (
         <div className='end-section'>
             <table>
-                <tr>
-                    <th >עוד עלינו</th>
-                    <th>צרו קשר</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td >שאלות ותשובות <FaQuestionCircle className='faq'  /></td>
-                    <td>054-1234567 <FaPhone className='phone' /></td>
-                </tr>
-                <tr>
-                    <td >הצטרפו אלינו <FaUserFriends className='join' /></td>
-                    <td>Hakayak@gmail.com <MdEmail className='mail' /></td>
-                </tr>
-                <tr>
-                    <td className='social-media-icons'>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th >עוד עלינו</th>
+                        <th>צרו קשר</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >שאלות ותשובות <FaQuestionCircle className='faq'  /></td>
+                        <td>054-1234567 <FaPhone className='phone' /></td>
+                    </tr>
+                    <tr>
+                        <td >הצטרפו אלינו <FaUserFriends className='join' /></td>
+                        <td>Hakayak@gmail.com <MdEmail className='mail' /></td>
+                    </tr>
+                    <tr>
+                        <td className='social-media-icons'>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
             <span className='social-media-icons'>
                 <FaFacebook className='facebook' />
