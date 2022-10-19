@@ -34,7 +34,7 @@ In the project directory, you can run:
 
 3.run `nodemon server.js`.
 
-to add reports go to [title](https://github.com/AchiyaAvrahamof/Abandoned-animals)
+to add reports go to [report form](https://github.com/AchiyaAvrahamof/Abandoned-animals)
 
 ## Screenshots <a name="Screenshots"></a>
 Dashbord, when clicking on the animal it will show you all the details and let you nevigate and make a phone call
