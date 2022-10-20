@@ -54,6 +54,8 @@ export default function BasicModal(props) {
           </Typography>
           <Button dir='rtl' size="midume" onClick={()=>save()}>שמירה</Button>
         </Box>
+
+        
         {/* <a href={`tel:${props.phone}`}>{props.phone}</a> */}
       </Modal>
     </div>
