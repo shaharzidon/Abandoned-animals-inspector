@@ -1,17 +1,14 @@
 .photoandC {
   display: flex;
-  background-color: wheat;
 }
 .allCon {
   display: flex;
   flex-direction: column;
-  background-color: bisque;
 }
 
 .animalD {
   display: flex;
   flex-direction: row-reverse;
-  background-color: wheat;
 }
 
 .users-img {
@@ -20,9 +17,4 @@
 
 a:link {
   color: black;
-}
-
-.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-1e6y48t-MuiButtonBase-root-MuiButton-root
-  :hover {
-  background-color: bisque !important;
 }

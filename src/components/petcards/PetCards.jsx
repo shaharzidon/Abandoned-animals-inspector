@@ -81,7 +81,7 @@ export default function PetCards(props) {
                       className="album-image"
                     />
                   </Box>
-                  <CardContent sx={{ flexGrow: 1, bgcolor: 'text.disabled' }}>
+                  <CardContent sx={{ flexGrow: 1, bgcolor: 'text.disabled', background: '#6977A6' }}>
                     <Typography gutterBottom variant="h5" component="h2" dir="rtl">
                       {props.type[index]}
                     </Typography>
@@ -89,7 +89,7 @@ export default function PetCards(props) {
                       {props.problem[index]}
                     </Typography>
                   </CardContent>
-                  <CardActions>
+                  <CardActions sx={{ background: '#6977A6' }}>
                     <BasicModal id={props.id[index]} image={props.image[index]} name={props.name[index]} phone={props.phone[index]} email={props.email[index]} type={props.type[index]} size={props.size[index]} vailent={props.vailent[index]} place={props.place[index]} time={props.time[index]} problem={props.problem[index]} exstraD={props.exstraD[index]} />
                   </CardActions>
                 </Card>

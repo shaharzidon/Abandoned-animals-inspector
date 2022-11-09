@@ -11,10 +11,11 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 280,
-  bgcolor: 'primary.main',
+  bgcolor: '#6977A6',
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
+  
 };
 
 export default function BasicModal(props) {
@@ -32,7 +33,7 @@ export default function BasicModal(props) {
        }
   return (
     <div>
-      <Button dir='rtl' sx={{bgcolor:'primary.plain'}} onClick={handleOpen}>פרטים נוספים</Button>
+      <Button dir='rtl' sx={{color:'black'}} onClick={handleOpen}>פרטים נוספים</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -55,10 +56,9 @@ export default function BasicModal(props) {
           <a className='user-phone-link' href={`tel:${props.phone}`} style={{color: "black"}}>{props.phone}</a>
           </Typography>
           <Typography dir="rtl" id="modal-modal-description" sx={{ mt: 0 }}>
-          <Button onClick={()=>window.open("https://maps.google.com?q="+props.place)}>
-          {`${props.place}`}</Button>
+          <Button sx={{ color: 'black', paddingRight: 0 }} onClick={()=>window.open("https://maps.google.com?q="+props.place)}>{`${props.place}`}</Button>
           </Typography>
-          <Button dir='rtl' size="midume" onClick={()=>save()}>שמירה</Button>
+          <Button  sx={{ color: 'black' }} dir='rtl' size="midume" onClick={()=>save()}>שמירה</Button>
         </Box>
 
         

@@ -45,7 +45,7 @@ export default function SignInSide() {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square sx={{ background: 'linear-gradient(to bottom, #001c77c2, #bebfbf)' }}>
           <Box
             sx={{
               my: 8,
@@ -57,7 +57,7 @@ export default function SignInSide() {
           >
             <Avatar sx={{ m: 1 }}>
             </Avatar>
-            <Typography dir='rtl' component="h1" variant="h5">
+            <Typography dir='rtl' component="h1" variant="h5" >
               כניסה
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
@@ -88,9 +88,8 @@ export default function SignInSide() {
                 <Button
                   type="submit"
                   fullWidth
-                  variant="contained"
-                  sx={{ mt: 3, mb: 2 }}
-
+                  // variant="contained"
+                  sx={{ mt: 3, mb: 2, background: '#bebfbf', color: 'black' }}
                 >
                   התחברות
                 </Button>
